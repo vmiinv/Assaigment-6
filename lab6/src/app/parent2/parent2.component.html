@@ -1,0 +1,11 @@
+<p>Parent2</p>
+<button type="button" (click)="getSharedValue()">
+  Get Shared Values
+</button>
+
+<div *ngFor="let sharedValue of sharedValueList">
+  <p>
+    Id: {{sharedValue.valueId}}, Name: {{sharedValue.valueName}}
+  </p>
+</div>
+<app-child3></app-child3>
